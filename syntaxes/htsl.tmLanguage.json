@@ -1,0 +1,57 @@
+{
+    "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+    "name": "HTSL",
+    "patterns": [
+        {
+            "include": "#expression"
+        }
+    ],
+    "repository": {
+        "expression": {
+            "patterns": [
+                {
+                    "match": "\\b(stat|globalstat|chat|if|random|giveItem|removeItem|tp|compassTarget|applyLayout|applyPotion|enchant|actionBar|cancelEvent|changeHealth|changePlayerGroup|clearEffects|title|failParkour|fullHeal|xpLevel|houseSpawn|kill|parkCheck|sound|resetInventory|lobby|gamemode|hungerLevel|maxHealth|function|consumeItem)\\b",
+                    "name": "keyword.control.htsl"
+                },
+                {
+                    "match": "\\b(stat|globalstat|gamemode)\\b",
+                    "name": "support.function.htsl"
+                },
+                {
+                    "match": "\\b(increment|decrement|set|multiply|divide|inc|dec|mult|div|\\+=|-=|=|\\*=|/=|//=)\\b",
+                    "name": "keyword.operator.htsl"
+                },
+                {
+                    "match": "(?<=\\b(stat|globalstat)\\s)\\w+",
+                    "name": "variable.other.htsl"
+                },
+                {
+                    "match": "\\b\\d+\\b",
+                    "name": "constant.numeric.htsl"
+                },
+                {
+                    "begin": "\"",
+                    "end": "\"",
+                    "name": "string.quoted.double.htsl"
+                },
+                {
+                    "match": "^//.*$",
+                    "name": "comment.line.double-slash.htsl"
+                },
+                {
+                    "match": "\\b(and|or)\\b",
+                    "name": "keyword.operator.logical.htsl"
+                },
+                {
+                    "match": "\\b(hasItem|stat|globalstat|hasPotion|doingParkour|inRegion|hasPermission|hasGroup|damageCause|blockType|isSneaking|health|maxHealth|hunger)\\b",
+                    "name": "support.function.htsl"
+                },
+                {
+                    "match": "(?<=\\b(stat|globalstat|health|maxHealth|hunger)\\s+\\w+\\s*)>=|==|<=|!=|>|<|=>|=<",
+                    "name": "keyword.operator.comparison.htsl"
+                }
+            ]
+        }
+    },
+    "scopeName": "source.htsl"
+}
