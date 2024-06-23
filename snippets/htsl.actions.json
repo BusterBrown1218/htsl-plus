@@ -1,0 +1,150 @@
+{
+    "Apply Inventory Layout": {
+        "prefix": "applyLayout",
+        "body": ["applyLayout \"${1}\""]
+    },
+    "Apply Potion Effect": {
+        "prefix": "applyPotion",
+        "body": ["applyPotion \"${1|Speed,Slowness,Haste,Mining Fatigue,Strength,Instant Health,Instant Damage,Jump Boost,Nausea,Regeneration,Resistance,Fire Resistance,Water Breathing,Invisibility,Blindness,Night Vision,Hunger,Weakness,Poison,Wither,Health Boost,Absorption|}\" ${2:60} ${3:1} ${4|true,false|}"]
+    },
+    "Balance Player Team": {
+        "prefix": "balanceTeam",
+        "body": ["balanceTeam"]
+    },
+    "Cancel Event": {
+        "prefix": "cancelEvent",
+        "body": ["cancelEvent"]
+    },
+    "Change Global Stat": {
+        "prefix": "globalstat",
+        "body": ["globalstat ${1:Kills} ${2|inc,dec,set,mult,div,+=,-=,=,*=,/=|} ${3:1}"]
+    },
+    "Change Health": {
+        "prefix": "changeHealth",
+        "body": ["changeHealth ${1|inc,dec,set,mult,div,+=,-=,=,*=,/=|} ${2:20}"]
+    },
+    "Change Hunger Level": {
+        "prefix": "hungerLevel",
+        "body": ["hungerLevel ${1|inc,dec,set,mult,div,+=,-=,=,*=,/=|} ${2:5}"]
+    },
+    "Change Max Health": {
+        "prefix": "maxHealth",
+        "body": ["maxHealth ${1|inc,dec,set,mult,div,+=,-=,=,*=,/=|} ${2:5}"]
+    },
+    "Change Player Group": {
+        "prefix": "changePlayerGroup",
+        "body": ["changePlayerGroup \"${1:Visitor}\" ${2|true,false|}"]
+    },
+    "Change Player Stat": {
+        "prefix": "stat",
+        "body": ["stat ${1:Kills} ${2|inc,dec,set,mult,div,+=,-=,=,*=,/=|} ${3:1}"]
+    },
+    "Change Team Stat": {
+        "prefix": "teamstat",
+        "body": ["teamstat ${1:Kills} ${2:Blue} ${3|inc,dec,set,mult,div,+=,-=,=,*=,/=|} ${4:1}"]
+    },
+    "Clear All Potion Effects": {
+        "prefix": "clearEffects",
+        "body": ["clearEffects"]
+    },
+    "Close Menu": {
+        "prefix": "closeMenu",
+        "body": ["closeMenu"]
+    },
+    "Display Action Bar": {
+        "prefix": "actionBar",
+        "body": ["actionBar \"${1:Hello World!}\""]
+    },
+    "Display Menu": {
+        "prefix": "displayMenu",
+        "body": ["displayMenu \"${1:Your Statistics}\""]
+    },
+    "Display Title": {
+        "prefix": "title",
+        "body": ["title \"${1:Hello}\" \"${2:World!}\" ${3:2} ${4:5} ${5:3}"]
+    },
+    "Enchant Held Item": {
+        "prefix": "enchant",
+        "body": ["enchant \"${1|Protection,Fire Protection,Feather Falling,Blast Protection,Projectile Protection,Respiration,Aqua Affinity,Thorns,Depth Strider,Sharpness,Smite,Bane Of Arthropods,Knockback,Fire Aspect,Looting,Efficiency,Silk Touch,Unbreaking,Fortune,Power,Punch,Flame,Infinity|}\" ${2:5}"]
+    },
+    "Exit": {
+        "prefix": "exit",
+        "body": ["exit"]
+    },
+    "Fail Parkour": {
+        "prefix": "failParkour",
+        "body": ["failParkour \"${1:You ran /stuck}\""]
+    },
+    "Full Heal": {
+        "prefix": "fullHeal",
+        "body": ["fullHeal"]
+    },
+    "Give Experience Levels": {
+        "prefix": "xpLevel",
+        "body": ["xpLevel ${1:10}"]
+    },
+    "Give Item": {
+        "prefix": "giveItem",
+        "body": ["giveItem \"${1:Stone}\" ${2|true,false|} \"${3|First Slot,Hand Slot,Helmet,Chestplate,Leggings,Boots,Hotbar Slot 1,Hotbar Slot 2,Hotbar Slot 3,Hotbar Slot 4,Hotbar Slot 5,Hotbar Slot 6,Hotbar Slot 7,Hotbar Slot 8,Hotbar Slot 9,Inventory Slot 1,Inventory Slot 2,Inventory Slot 3,Inventory Slot 4,Inventory Slot 5,Inventory Slot 6,Inventory Slot 7,Inventory Slot 8,Inventory Slot 9,Inventory Slot 10,Inventory Slot 11,Inventory Slot 12,Inventory Slot 13,Inventory Slot 14,Inventory Slot 15,Inventory Slot 16,Inventory Slot 17,Inventory Slot 18,Inventory Slot 19,Inventory Slot 20,Inventory Slot 21,Inventory Slot 22,Inventory Slot 23,Inventory Slot 24,Inventory Slot 25,Inventory Slot 26,Inventory Slot 27|}\" ${4|true,false|}"]
+    },
+    "Go to House Spawn": {
+        "prefix": "houseSpawn",
+        "body": ["houseSpawn"]
+    },
+    "Kill Player": {
+        "prefix": "kill",
+        "body": ["kill"]
+    },
+    "Parkour Checkpoint": {
+        "prefix": "parkCheck",
+        "body": ["parkCheck"]
+    },
+    "Pause Execution": {
+        "prefix": "pause",
+        "body": ["pause ${1:10}"]
+    },
+    "Play Sound": {
+        "prefix": "sound",
+        "body": ["sound \"${1|Ambience Cave,Ambience Rain,Ambience Thunder,Anvil Break,Anvil Land,Anvil Use,Arrow Hit,Burp,Chest Close,Chest Open,Click,Door Close,Door Open,Drink,Eat,Explode,Fall Big,Fall Small,Fizz,Fuse,Glass,Hurt Flesh,Item Break,Item Pickup,Lava Pop,Level Up,Note Bass,Note Piano,Note Bass Drum,Note Sticks,Note Bass Guitar,Note Snare Drum,Note Pling,Orb Pickup,Shoot Arrow,Splash,Splash2,Swim,Wood Click,Bat Death,Bat Hurt,Bat Idle,Bat Loop,Bat Takeoff,Blaze Breath,Blaze Death,Blaze Hit,Cat Hiss,Cat Hit,Cat Meow,Cat Purr,Cat Purreow,Chicken Idle,Chicken Hurt,Chicken Egg Pop,Chicken Walk,Cow Idle,Cow Hurt,Cow Walk,Creeper Hiss,Creeper Death,Enderdragon Death,Enderdragon Growl,Enderdragon Hit,Enderdragon Wings,Enderman Death,Enderman Hit,Enderman Idle,Enderman Teleport,Enderman Scream,Enderman Stare,Ghast Scream,Ghast Scream2,Ghast Charge,Ghast Death,Ghast Fireball,Ghast Moan,Guardian Hit,Guardian Idle,Guardian Death,Guardian Elder Hit,Guardian Elder Idle,Guardian Elder Death,Guardian Land Hit,Guardian Land Idle,Guardian Land Death,Guardian Curse,Guardian Attack,Guardian Flop,Irongolem Death,Irongolem Hit,Irongolem Throw,Irongolem Walk,Magmacube Walk,Magmacube Walk2,Magmacube Jump,Pig Idle,Pig Death,Pig Walk,Rabbit Ambient,Rabbit Death,Rabbit Hurt,Rabbit Jump,Sheep Idle,Sheep Shear,Sheep Walk,Silverfish Hit,Silverfish Kill,Silverfish Idle,Silverfish Walk,Skeleton Idle,Skeleton Death,Skeleton Hurt,Skeleton Walk,Slime Attack,Slime Walk,Slime Walk2,Spider Idle,Spider Death,Spider Walk,Wither Death,Wither Hurt,Wither Idle,Wither Shoot,Wither Spawn,Wolf Bark,Wolf Death,Wolf Growl,Wolf Howl,Wolf Hurt,Wolf Pant,Wolf Shake,Wolf Walk,Wolf Whine,Zombie Metal,Zombie Wood,Zombie Woodbreak,Zombie Idle,Zombie Death,Zombie Hurt,Zombie Infect,Zombie Unfect,Zombie Remedy,Zombie Walk,Zombie Pig Idle,Zombie Pig Angry,Zombie Pig Death,Zombie Pig Hurt,Firework Blast,Firework Blast2,Firework Large Blast,Firework Large Blast2,Firework Twinkle,Firework Twinkle2,Firework Launch,Successful Hit,Horse Angry,Horse Armor,Horse Breathe,Horse Death,Horse Gallop,Horse Hit,Horse Idle,Horse Jump,Horse Land,Horse Saddle,Horse Soft,Horse Wood,Donkey Angry,Donkey Death,Donkey Hit,Donkey Idle,Horse Skeleton Death,Horse Skeleton Hit,Horse Skeleton Idle,Horse Zombie Death,Horse Zombie Hit,Horse Zombie Idle,Villager Death,Villager Haggle,Villager Hit,Villager Idle,Villager No,Villager Yes|}\" ${2:0.7} ${3:1} \"${4|house_spawn,current_location,invokers_location,custom_coordinates|}\""]
+    },
+    "Remove Item": {
+        "prefix": "removeItem",
+        "body": ["removeItem \"${1:Stone}\""]
+    },
+    "Reset Inventory": {
+        "prefix": "resetInventory",
+        "body": ["resetInventory"]
+    },
+    "Send a Chat Message": {
+        "prefix": "chat",
+        "body": ["chat \"${1:Hello World!}\""]
+    },
+    "Send to Lobby": {
+        "prefix": "lobby",
+        "body": ["lobby \"${1|Main Lobby,Tournament Hall,Blitz SG,The TNT Games,Mega Walls,Arcade Games,Cops and Crims,UHC Champions,Warlords,Smash Heroes,Housing,SkyWars,Speed UHC,Classic Games,Prototype,Bed Wars,Murder Mystery,Build Battle,Duels,Wool Wars|}\""]
+    },
+    "Set Compass Target": {
+        "prefix": "compassTarget",
+        "body": ["compassTarget \"${1|house_spawn,current_location,invokers_location,custom_coordinates|}\""]
+    },
+    "Set Gamemode": {
+        "prefix": "gamemode",
+        "body": ["gamemode \"${1|Adventure,Survival,Creative|}\""]
+    },
+    "Set Player Team": {
+        "prefix": "setTeam",
+        "body": ["setTeam \"${1:Blue}\""]
+    },
+    "Teleport Player": {
+        "prefix": "tp",
+        "body": ["tp \"${1|house_spawn,current_location,invokers_location,custom_coordinates|}\""]
+    },
+    "Trigger Function": {
+        "prefix": "function",
+        "body": ["function \"${1:Announce}\" ${2|true,false|}"]
+    },
+    "Use/Remove Held Item": {
+        "prefix": "consumeItem",
+        "body": ["consumeItem"]
+    }
+}

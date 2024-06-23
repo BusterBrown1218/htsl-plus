@@ -1,0 +1,94 @@
+{
+    "Block Type": {
+        "prefix": "blockType",
+        "body": ["blockType \"${1:Stone}\" ${2|true,false|}"]
+    },
+    "Damage Amount": {
+        "prefix": "damageAmount",
+        "body": ["damageAmount ${1|==,<,<=,>,>=|} ${2:10}"]
+    },
+    "Damage Cause": {
+        "prefix": "damageCause",
+        "body": ["damageCause \"${1|Entity Attack,Projectile,Suffocation,Fall,Lava,Fire,Fire Tick,Drowning,Starvation,Poison,Thorns|}\""]
+    },
+    "Doing Parkour": {
+        "prefix": "doingParkour",
+        "body": ["doingParkour"]
+    },
+    "Fishing Environment": {
+        "prefix": "fishingEnv",
+        "body": ["fishingEnv \"${1|Water,Lava|}\""]
+    },
+    "Global Stat Requirement": {
+        "prefix": "globalstat",
+        "body": ["globalstat ${1:Kills} ${2|==,<,<=,>,>=|} ${3:10}"]
+    },
+    "Has Item": {
+        "prefix": "hasItem",
+        "body": ["hasItem \"${1:Stone}\" ${2:metadata} ${3|Hand,Armor,Hotbar,Inventory,Anywhere|} ${4:anyAmount}"]
+    },
+    "Has Potion Effect": {
+        "prefix": "hasPotion",
+        "body": ["hasPotion \"${1|Speed,Slowness,Haste,Mining Fatigue,Strength,Instant Health,Instant Damage,Jump Boost,Nausea,Regeneration,Resistance,Fire Resistance,Water Breathing,Invisibility,Blindness,Night Vision,Hunger,Weakness,Poison,Wither,Health Boost,Absorption|}\""]
+    },
+    "Is Item": {
+        "prefix": "isItem",
+        "body": ["isItem \"${1:Stone}\" ${2:metadata} ${3|Hand,Armor,Hotbar,Inventory,Anywhere|} ${4:anyAmount}"]
+    },
+    "Is Sneaking": {
+        "prefix": "isSneaking",
+        "body": ["isSneaking"]
+    },
+    "Max Player Health": {
+        "prefix": "maxHealth",
+        "body": ["maxHealth ${1|==,<,<=,>,>=|} ${2:10}"]
+    },
+    "Placeholder Number Requirement": {
+        "prefix": "placeholder",
+        "body": ["placeholder %${1|player.health,player.maxhealth,player.hunger,player.experience,player.level,player.protocol,player.location.x,player.location.y,player.location.z,player.location.pitch,player.location.yaw,player.group.priority,player.team.players/<team name>,house.guests,house.cookies,house.players,date.day/[timezone],date.month/[timezone],date.year/[timezone],date.hour/[timezone],date.minute/[timezone],date.seconds/[timezone],date.unix,random.int/<inclusive origin> <exclusive bound>,stat.player/<key>,stat.global/<key>,stat.team/<key> <team name>|}% ${2|==,<,<=,>,>=|} ${3:10}"]
+    },
+    "Player Flying": {
+        "prefix": "isFlying",
+        "body": ["isFlying"]
+    },
+    "Player Health": {
+        "prefix": "health",
+        "body": ["health ${1|==,<,<=,>,>=|} ${2:10}"]
+    },
+    "Player Hunger": {
+        "prefix": "hunger",
+        "body": ["hunger ${1|==,<,<=,>,>=|} ${2:10}"]
+    },
+    "Player Stat Requirement": {
+        "prefix": "stat",
+        "body": ["stat ${1:Kills} ${2|==,<,<=,>,>=|} ${3:10}"]
+    },
+    "Portal Type": {
+        "prefix": "portal",
+        "body": ["portal \"${1|Nether Portal,End Portal|}\""]
+    },
+    "PvP Enabled": {
+        "prefix": "canPvp",
+        "body": ["canPvp"]
+    },
+    "Required Gamemode": {
+        "prefix": "gamemode",
+        "body": ["gamemode \"${1|Adventure,Survival,Creative|}\""]
+    },
+    "Required Group": {
+        "prefix": "hasGroup",
+        "body": ["hasGroup \"${1:Visitor}\" ${2|true,false|}"]
+    },
+    "Required Permission": {
+        "prefix": "hasPermission",
+        "body": ["hasPermission \"${1|Fly,Wood Door,Iron Door,Wood Trap Door,Iron Trap Door,Fence Gate,Button,Lever,Use Launch Pads,/tp,/tp Other Players,Jukebox,Kick,Ban,Mute,Pet Spawning,Build,Offline Build,Fluid,Pro Tools,Use Chests,Use Ender Chests,Item Editor,Switch Game Mode,Edit Stats,Change Player Group,Change Gamerules,Housing Menu,Team Chat Spy,Edit Actions,Edit Regions,Edit Scoreboard,Edit Event Actions,Edit Commands,Edit Functions,Edit Inventory Layouts,Edit Teams,Edit Custom Menus,Item: Mailbox,Item: Egg Hunt,Item: Teleport Pad,Item: Launch Pad,Item: Action Pad,Item: Hologram,Item: NPCs,Item: Action Button,Item: Leaderboard,Item: Trash Can,Item: Biome Stick|}\""]
+    },
+    "Required Team": {
+        "prefix": "hasTeam",
+        "body": ["hasTeam \"${1:Blue}\""]
+    },
+    "Team Stat Requirement": {
+        "prefix": "teamstat",
+        "body": ["teamstat ${1:Kills} ${2:Blue} ${3|==,<,<=,>,>=|} ${4:10}"]
+    }
+}

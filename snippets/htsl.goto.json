@@ -1,0 +1,30 @@
+{
+    "Go to Function": {
+        "prefix": "goto",
+        "body": ["goto function \"${1:Function Name}\""]
+    },
+    "Go to Event Action": {
+        "prefix": "goto",
+        "body": ["goto event \"${1:Event Name}\""]
+    },
+    "Go to Custom Command": {
+        "prefix": "goto",
+        "body": ["goto command \"${1:Command Name}\""]
+    },
+    "Go to NPC": {
+        "prefix": "goto",
+        "body": ["goto npc \"${1:NPC Name}\""]
+    },
+    "Go to Action Button": {
+        "prefix": "goto",
+        "body": ["goto button \"${1:Button Name}\""]
+    },
+    "Go to Action Pad": {
+        "prefix": "goto",
+        "body": ["goto pad \"${1:Action Pad Name}\""]
+    },
+    "Go to Region": {
+        "prefix": "goto",
+        "body": ["goto region \"${1:Region Name}\", \"${2|Entry,Exit|} Actions\""]
+    }
+}

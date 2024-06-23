@@ -1,57 +1,65 @@
 {
     "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
     "name": "HTSL",
+    "scopeName": "source.htsl",
     "patterns": [
         {
-            "include": "#expression"
+            "begin": "/\\*",
+            "end": "\\*/",
+            "name": "comment.block.yourlanguage"
+        },
+        {
+            "match": "^\\s*//.*$",
+            "name": "comment.line.double-slash.htsl"
+        },
+        {
+            "match": "\\b(true|false)\\b",
+            "name": "constant.language.boolean.htsl"
+        },
+        {
+            "match": "\\b\\d+\\b",
+            "name": "constant.numeric.htsl"
+        },
+        {
+            "match": "\\b\\d+\\.\\d+\\b",
+            "name": "constant.numeric.float.htsl"
+        },
+        {
+            "match": "\\b(define|loop|stat|globalstat|chat|if|random|giveItem|removeItem|tp|compassTarget|applyLayout|applyPotion|enchant|actionBar|cancelEvent|changeHealth|changePlayerGroup|clearEffects|title|failParkour|fullHeal|xpLevel|houseSpawn|kill|parkCheck|sound|resetInventory|lobby|gamemode|hungerLevel|maxHealth|function|consumeItem|displayMenu|closeMenu|pause|setTeam|teamstat|balanceTeam|goto|else|exit)\\b",
+            "name": "keyword.control.htsl"
+        },
+        {
+            "match": "\\b(increment|decrement|set|multiply|divide|inc|dec|mult|div|\\+=|-=|=|\\*=|/=|//=)\\b",
+            "name": "keyword.operator.htsl"
+        },
+        {
+            "match": "(?<=\\b(stat|globalstat|health|maxHealth|hunger|damageAmount|teamstat)\\s+\\w+\\s*)>=|==|<=|!=|>|<|=>|=<",
+            "name": "keyword.operator.comparison.htsl"
+        },
+        {
+            "match": "\\b(and|or)\\b",
+            "name": "keyword.operator.logical.htsl"
+        },
+        {
+            "begin": "\"",
+            "end": "\"",
+            "name": "string.quoted.double.htsl"
+        },
+        {
+            "match": "\\b(stat|globalstat|gamemode|hasItem|hasPotion|doingParkour|inRegion|hasPermission|hasGroup|damageCause|blockType|isSneaking|health|maxHealth|hunger|damageAmount|placeholder|teamstat|hasTeam|isFlying|fishingEnv|isItem|canPvp|portal)\\b",
+            "name": "support.function.htsl"
+        },
+        {
+            "match": "(?<=\\b(stat|globalstat|teamstat)\\s)\\w+",
+            "name": "variable.other.htsl"
+        },
+        {
+            "match": "(?<=\\bloop \\d+\\s)\\w+",
+            "name": "variable.other.htsl"
+        },
+        {
+            "match": "(?<=\\bdefine\\s)\\w+",
+            "name": "variable.other.htsl"
         }
-    ],
-    "repository": {
-        "expression": {
-            "patterns": [
-                {
-                    "match": "\\b(goto|pause|balanceTeams|teamstat|stat|globalstat|chat|if|random|giveItem|removeItem|tp|compassTarget|applyLayout|applyPotion|enchant|actionBar|cancelEvent|changeHealth|changePlayerGroup|clearEffects|title|failParkour|fullHeal|xpLevel|houseSpawn|kill|parkCheck|sound|resetInventory|lobby|gamemode|hungerLevel|maxHealth|function|consumeItem)\\b",
-                    "name": "keyword.control.htsl"
-                },
-                {
-                    "match": "\\b(stat|globalstat|gamemode)\\b",
-                    "name": "support.function.htsl"
-                },
-                {
-                    "match": "\\b(increment|decrement|set|multiply|divide|inc|dec|mult|div|\\+=|-=|=|\\*=|/=|//=)\\b",
-                    "name": "keyword.operator.htsl"
-                },
-                {
-                    "match": "(?<=\\b(stat|globalstat)\\s)\\w+",
-                    "name": "variable.other.htsl"
-                },
-                {
-                    "match": "\\b\\d+\\b",
-                    "name": "constant.numeric.htsl"
-                },
-                {
-                    "begin": "\"",
-                    "end": "\"",
-                    "name": "string.quoted.double.htsl"
-                },
-                {
-                    "match": "^//.*$",
-                    "name": "comment.line.double-slash.htsl"
-                },
-                {
-                    "match": "\\b(and|or)\\b",
-                    "name": "keyword.operator.logical.htsl"
-                },
-                {
-                    "match": "\\b(hasItem|stat|globalstat|hasPotion|doingParkour|inRegion|hasPermission|hasGroup|damageCause|blockType|isSneaking|health|maxHealth|hunger)\\b",
-                    "name": "support.function.htsl"
-                },
-                {
-                    "match": "(?<=\\b(stat|globalstat|health|maxHealth|hunger)\\s+\\w+\\s*)>=|==|<=|!=|>|<|=>|=<",
-                    "name": "keyword.operator.comparison.htsl"
-                }
-            ]
-        }
-    },
-    "scopeName": "source.htsl"
+    ]
 }

@@ -1,49 +1,55 @@
 {
   "name": "htsl-plus",
-  "displayName": "HTSL-Plus",
-  "description": "",
-  "version": "0.0.1",
-  "engines": {
-    "vscode": "^1.78.0"
-  },
-  "categories": [
-    "Other"
-  ],
-  "activationEvents": [],
+  "displayName": "htsl-plus",
+  "description": "HTSL extension for Visual Studio Code",
+  "version": "0.0.3",
   "main": "./extension.js",
+  "engines": {
+      "vscode": "^1.73.0"
+  },
+  "repository": {
+      "type": "git",
+      "url": "https://github.com/BusterBrown1218/htsl-plus.git"
+  },
   "contributes": {
-    "commands": [
-      {
-        "command": "htsl-plus.helloWorld",
-        "title": "Hello World"
-      }
-    ],
-    "languages": [
-      {
-        "id": "htsl",
-        "aliases": [
-          "HTSL",
-          "htsl"
-        ],
-        "extensions": [
-          ".htsl"
-        ],
-        "configuration": "./language-configuration.json"
-      }
-    ],
-    "grammars": [
-      {
-        "language": "htsl",
-        "scopeName": "source.htsl",
-        "path": "./syntaxes/htsl.tmLanguage.json"
-      }
-    ],
-    "snippets": [
-      {
-        "language": "htsl",
-        "path": "./snippets/htsl.json"
-      }
-    ]
+      "languages": [
+          {
+              "id": "htsl",
+              "aliases": [
+                  "HTSL",
+                  "htsl"
+              ],
+              "extensions": [
+                  ".htsl"
+              ],
+              "configuration": "./language-configuration.json"
+          }
+      ],
+      "grammars": [
+          {
+              "language": "htsl",
+              "scopeName": "source.htsl",
+              "path": "./syntaxes/htsl.tmLanguage.json"
+          }
+      ],
+      "snippets": [
+          {
+              "language": "htsl",
+              "path": "./snippets/htsl.actions.json"
+          },
+          {
+              "language": "htsl",
+              "path": "./snippets/htsl.conditions.json"
+          },
+          {
+              "language": "htsl",
+              "path": "./snippets/htsl.goto.json"
+          },
+          {
+              "language": "htsl",
+              "path": "./snippets/htsl.multilines.json"
+          }
+      ]
   },
   "scripts": {
     "lint": "eslint .",
