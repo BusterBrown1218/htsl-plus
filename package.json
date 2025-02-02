@@ -2,7 +2,7 @@
   "name": "htsl-plus",
   "displayName": "htsl-plus",
   "description": "HTSL extension for Visual Studio Code",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "main": "./extension.js",
   "engines": {
       "vscode": "^1.73.0"
