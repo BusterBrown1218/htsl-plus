@@ -5,7 +5,7 @@
     },
     "Apply Potion Effect": {
         "prefix": "applyPotion",
-        "body": ["applyPotion \"${1|Speed,Slowness,Haste,Mining Fatigue,Strength,Instant Health,Instant Damage,Jump Boost,Nausea,Regeneration,Resistance,Fire Resistance,Water Breathing,Invisibility,Blindness,Night Vision,Hunger,Weakness,Poison,Wither,Health Boost,Absorption|}\" ${2:60} ${3:1} ${4|true,false|}"]
+        "body": ["applyPotion \"${1|Speed,Slowness,Haste,Mining Fatigue,Strength,Instant Health,Instant Damage,Jump Boost,Nausea,Regeneration,Resistance,Fire Resistance,Water Breathing,Invisibility,Blindness,Night Vision,Hunger,Weakness,Poison,Wither,Health Boost,Absorption|}\" ${2:60} ${3:1} ${4|true,false|} ${5|true,false|}"]
     },
     "Balance Player Team": {
         "prefix": "balanceTeam",
@@ -43,6 +43,10 @@
         "prefix": "teamstat",
         "body": ["teamstat ${1:Kills} ${2:Blue} ${3|inc,dec,set,mult,div,+=,-=,=,*=,/=|} ${4:1}"]
     },
+    "Change Velocity": {
+        "prefix": "changeVelocity",
+        "body": ["changeVelocity ${1:10} ${2:10} ${3:10}"]
+    },
     "Clear All Potion Effects": {
         "prefix": "clearEffects",
         "body": ["clearEffects"]
@@ -62,6 +66,10 @@
     "Display Title": {
         "prefix": "title",
         "body": ["title \"${1:Hello}\" \"${2:World!}\" ${3:2} ${4:5} ${5:3}"]
+    },
+    "Drop Item": {
+        "prefix": "dropItem",
+        "body": ["dropItem \"${1:Stone}\" \"${2|house_spawn,current_location,invokers_location,custom_coordinates|}\" \"${3:0 0 0}\" ${4|true,false|} ${5|true,false|} ${6|true,false|} ${7|true,false|}"]
     },
     "Enchant Held Item": {
         "prefix": "enchant",
@@ -94,6 +102,10 @@
     "Kill Player": {
         "prefix": "kill",
         "body": ["kill"]
+    },
+    "Launch to Target": {
+        "prefix": "launchTarget",
+        "body": ["launchTarget \"${1|house_spawn,current_location,invokers_location,custom_coordinates|}\" \"${2:0 0 0}\" ${3:2}"]
     },
     "Parkour Checkpoint": {
         "prefix": "parkCheck",
@@ -137,7 +149,7 @@
     },
     "Teleport Player": {
         "prefix": "tp",
-        "body": ["tp \"${1|house_spawn,current_location,invokers_location,custom_coordinates|}\""]
+        "body": ["tp \"${1|house_spawn,current_location,invokers_location,custom_coordinates|}\" \"${2:0 0 0}\" ${3|true,false|}"]
     },
     "Trigger Function": {
         "prefix": "function",

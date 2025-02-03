@@ -25,7 +25,7 @@
     },
     "Has Item": {
         "prefix": "hasItem",
-        "body": ["hasItem \"${1:Stone}\" ${2:metadata} ${3|Hand,Armor,Hotbar,Inventory,Anywhere|} ${4:anyAmount}"]
+        "body": ["hasItem \"${1:Stone}\" ${2:metadata} \"${3|Hand,Armor,Hotbar,Inventory,Cursor,Crafting Grid,Anywhere|}\" ${4:anyAmount}"]
     },
     "Has Potion Effect": {
         "prefix": "hasPotion",
@@ -33,7 +33,7 @@
     },
     "Is Item": {
         "prefix": "isItem",
-        "body": ["isItem \"${1:Stone}\" ${2:metadata} ${3|Hand,Armor,Hotbar,Inventory,Anywhere|} ${4:anyAmount}"]
+        "body": ["isItem \"${1:Stone}\" ${2:metadata} \"${3|Hand,Armor,Hotbar,Inventory,Cursor,Crafting Grid,Anywhere|}\" ${4:anyAmount}"]
     },
     "Is Sneaking": {
         "prefix": "isSneaking",
