@@ -6,6 +6,8 @@
     "engines": {
         "vscode": "^1.73.0"
     },
+    "activationEvents": [],
+    "main": "./extension.js",
     "repository": {
         "type": "git",
         "url": "https://github.com/BusterBrown1218/htsl-plus.git"
@@ -13,47 +15,61 @@
     "contributes": {
         "languages": [
             {
-                "id": "htsl",
+                "id": "ptsl",
                 "aliases": [
-                    "HTSL",
-                    "htsl"
+                    "PTSL",
+                    "ptsl"
                 ],
                 "extensions": [
-                    ".htsl"
+                    ".ptsl"
                 ],
                 "configuration": "./language-configuration.json"
             }
         ],
         "grammars": [
             {
-                "language": "htsl",
-                "scopeName": "source.htsl",
+                "language": "ptsl",
+                "scopeName": "source.ptsl",
                 "path": "./syntaxes/htsl.tmLanguage.json"
             }
         ],
         "snippets": [
             {
-                "language": "htsl",
+                "language": "ptsl",
                 "path": "./snippets/htsl.actions.json"
             },
             {
-                "language": "htsl",
+                "language": "ptsl",
                 "path": "./snippets/htsl.conditions.json"
             },
             {
-                "language": "htsl",
-                "path": "./snippets/htsl.goto.json"
-            },
-            {
-                "language": "htsl",
+                "language": "ptsl",
                 "path": "./snippets/htsl.multilines.json"
+            }
+        ],
+        "commands": [
+            {
+                "command": "ptsl-plus.startsocket",
+                "title": "Start PTSL+ Socket"
             }
         ]
     },
     "scripts": {
+        "compile:client": "tsc -p ./client/tsconfig.json",
         "package": "vsce package"
     },
+    "dependencies": {
+        "ws": "^8.6.0"
+    },
     "devDependencies": {
-        "@vscode/vsce": "^3.2.2"
+        "@vscode/vsce": "^3.2.2",
+        "@eslint/js": "^9.13.0",
+        "@stylistic/eslint-plugin": "^2.9.0",
+        "@types/mocha": "^10.0.1",
+        "@types/node": "^20",
+        "eslint": "^9.13.0",
+        "mocha": "^10.2.0",
+        "typescript": "^5.7.2",
+        "typescript-eslint": "^8.16.0"
     }
 }

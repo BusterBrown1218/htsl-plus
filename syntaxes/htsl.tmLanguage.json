@@ -1,65 +1,48 @@
 {
     "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
-    "name": "HTSL",
-    "scopeName": "source.htsl",
+    "name": "PTSL",
+    "scopeName": "source.ptsl",
     "patterns": [
         {
-            "begin": "/\\*",
-            "end": "\\*/",
-            "name": "comment.block.yourlanguage"
-        },
-        {
             "match": "^\\s*//.*$",
-            "name": "comment.line.double-slash.htsl"
+            "name": "comment.line.double-slash.ptsl"
         },
         {
             "match": "\\b(true|false)\\b",
-            "name": "constant.language.boolean.htsl"
+            "name": "constant.language.boolean.ptsl"
         },
         {
             "match": "\\b\\d+\\b",
-            "name": "constant.numeric.htsl"
+            "name": "constant.numeric.ptsl"
         },
         {
             "match": "\\b\\d+\\.\\d+\\b",
-            "name": "constant.numeric.float.htsl"
+            "name": "constant.numeric.float.ptsl"
         },
         {
-            "match": "\\b(launchTarget|changeVelocity|dropItem|define|loop|stat|globalstat|chat|if|random|giveItem|removeItem|tp|compassTarget|applyLayout|applyPotion|enchant|actionBar|cancelEvent|changeHealth|changePlayerGroup|clearEffects|title|failParkour|fullHeal|xpLevel|houseSpawn|kill|parkCheck|sound|resetInventory|lobby|gamemode|hungerLevel|maxHealth|function|consumeItem|displayMenu|closeMenu|pause|setTeam|teamstat|balanceTeam|goto|else|exit)\\b",
-            "name": "keyword.control.htsl"
+            "match": "\\b(launchTarget|propel|repeat|stat|globalstat|chat|if|random|tp|applyLayout|applyPotion|actionBar|cancelEvent|changeHealth|changePlayerGroup|clearEffects|title|fullHeal|kill|sound|resetInventory|gamemode|hungerLevel|maxHealth|function|displayMenu|closeMenu|pause|else|exit)\\b",
+            "name": "keyword.control.ptsl"
         },
         {
             "match": "\\b(increment|decrement|set|multiply|divide|inc|dec|mult|div|\\+=|-=|=|\\*=|/=|//=)\\b",
-            "name": "keyword.operator.htsl"
+            "name": "keyword.operator.ptsl"
         },
         {
-            "match": "(?<=\\b(stat|globalstat|health|maxHealth|hunger|damageAmount|teamstat)\\s+\\w+\\s*)>=|==|<=|!=|>|<|=>|=<",
-            "name": "keyword.operator.comparison.htsl"
+            "match": "(?<=\\b(stat|globalstat|health|maxHealth|hunger)\\s+\\w+\\s*)>=|==|<=|!=|>|<|=>|=<",
+            "name": "keyword.operator.comparison.ptsl"
         },
         {
-            "match": "\\b(and|or)\\b",
-            "name": "keyword.operator.logical.htsl"
+            "match": "\\b(and|or|)\\b",
+            "name": "keyword.operator.logical.ptsl"
         },
         {
             "begin": "\"",
             "end": "\"",
-            "name": "string.quoted.double.htsl"
+            "name": "string.quoted.double.ptsl"
         },
         {
-            "match": "\\b(stat|globalstat|gamemode|hasItem|hasPotion|doingParkour|inRegion|hasPermission|hasGroup|damageCause|blockType|isSneaking|health|maxHealth|hunger|damageAmount|placeholder|teamstat|hasTeam|isFlying|fishingEnv|isItem|canPvp|portal)\\b",
-            "name": "support.function.htsl"
-        },
-        {
-            "match": "(?<=\\b(stat|globalstat|teamstat)\\s)\\w+",
-            "name": "variable.other.htsl"
-        },
-        {
-            "match": "(?<=\\bloop \\d+\\s)\\w+",
-            "name": "variable.other.htsl"
-        },
-        {
-            "match": "(?<=\\bdefine\\s)\\w+",
-            "name": "variable.other.htsl"
+            "match": "\\b(stat|globalstat|gamemode|hasPotion|inRegion|hasPermission|hasGroup|isSneaking|isGliding|health|maxHealth|hunger|damageAmount|placeholder|isFlying|)\\b",
+            "name": "support.function.ptsl"
         }
     ]
 }

@@ -1,18 +1,14 @@
 {
     "Conditional": {
         "prefix": "if",
-        "body": ["if ${1|and,or|} () {\n\n} else {\n\n}"]
+        "body": ["if ${1|and,or,false,true|} ${2|false,true|} () {\n    \n} else {\n    \n}"]
     },
     "Random Action": {
         "prefix": "random",
-        "body": ["random {\n\n}"]
+        "body": ["random {\n    \n}"]
     },
-    "Loop": {
-        "prefix": "loop",
-        "body": ["loop ${1:2} ${2:index} {\n\n}"]
-    },
-    "Define": {
-        "prefix": "define",
-        "body": ["define ${1:shortcut} ${2:value}"]
+    "Repeat": {
+        "prefix": "repeat",
+        "body": ["repeat ${1:2} {\n    \n}"]
     }
 }
