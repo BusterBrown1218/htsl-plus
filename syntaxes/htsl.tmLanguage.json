@@ -20,11 +20,11 @@
             "name": "constant.numeric.float.ptsl"
         },
         {
-            "match": "\\b(launchTarget|propel|repeat|stat|globalstat|chat|if|random|tp|applyLayout|applyPotion|actionBar|cancelEvent|changeHealth|changePlayerGroup|clearEffects|title|fullHeal|kill|sound|resetInventory|gamemode|hungerLevel|maxHealth|function|displayMenu|closeMenu|pause|else|exit)\\b",
+            "match": "\\b(if|else|cancelEvent|changePlayerGroup|changePlayerTeam|kill|fullHeal|velocity|title|actionBar|clearInventory|maxHealth|chat|applyPotion|clearEffect|stat|globalstat|teleport|clearEnderChest|sound|gamemode|changeHealth|hungerLevel|random|function|applyLayout|pause|bossbar|hitDelay|launchProjectile|particle|displayName|repeat|clearBossbar|clearPlayerStats|clearGlobalStats|exit|break|continue|displayMenu|closeMenu|explosion|startHouseMusic|stopHouseMusic|attribute|changeTime|attackEntity)\\b",
             "name": "keyword.control.ptsl"
         },
         {
-            "match": "\\b(increment|decrement|set|multiply|divide|inc|dec|mult|div|\\+=|-=|=|\\*=|/=|//=)\\b",
+            "match": "\\b(increment|decrement|set|multiply|divide|mod|floor|round|pStat|gStat|concat|indexOf|lengthOf|chatAt|inc|dec|mult|div|\\+=|-=|=|\\*=|/=|//=|%)\\b",
             "name": "keyword.operator.ptsl"
         },
         {
@@ -41,7 +41,7 @@
             "name": "string.quoted.double.ptsl"
         },
         {
-            "match": "\\b(stat|globalstat|gamemode|hasPotion|inRegion|hasPermission|hasGroup|isSneaking|isGliding|health|maxHealth|hunger|damageAmount|placeholder|isFlying|)\\b",
+            "match": "\\b(inGroup|stat|globalstat|hasPermission|inRegion|hasPotionEffect|isSneaking|isFlying|isGliding|health|maxHealth|hunger|gamemode|placeholder|isAttackCooldown|clickType|damageType|damageAmount|interactionType|)\\b",
             "name": "support.function.ptsl"
         }
     ]

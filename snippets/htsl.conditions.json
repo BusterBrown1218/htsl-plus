@@ -1,54 +1,78 @@
 {
+    "Required Group": {
+        "prefix": "inGroup",
+        "body": ["hasGroup \"${1:Default}\" ${2|true,false|}"]
+    },
+    "Player Stat Requirement": {
+        "prefix": "stat",
+        "body": ["stat ${1:Kills} ${2|==,<,<=,>,>=,contains|} ${3:10}"]
+    },
     "Global Stat Requirement": {
         "prefix": "globalstat",
-        "body": ["globalstat ${1:Kills} ${2|==,<,<=,>,>=|} ${3:10}"]
+        "body": ["globalstat ${1:Kills} ${2|==,<,<=,>,>=,contains|} ${3:10}"]
+    },
+    "Required Permission": {
+        "prefix": "hasPermission",
+        "body": ["hasPermission \"${1|FLY,WOOD_DOOR,IRON_DOOR,WOOD_TRAPDOOR,IRON_TRAPDOOR,FENCE_GATE,BUTTON,LEVER,LAUNCH_PAD,COMMAND_TP,COMMAND_TP_OTHER,JUKEBOX,KICK,BAN,MUTE,CHAT,PET_SPAWNING,BUILD,OFFLINE_BUILD,FLUID,PRO_TOOLS,ENTITY_BUCKET,USE_CHESTS,USE_ENDER_CHESTS,USE_SHULKERS,ITEM_EDITOR,GAMEMODE,COMMAND_GAMEMODE,COMMAND_EDITSTATS,CHANGE_PLAYER_GROUP,CHANGE_PLAYER_TEAM,CHANGE_GAMERULES,HOUSING_MENU,HOUSE_SETTINGS,EDIT_PERMISSIONS_AND_GROUP,TEAM_CHAT_SPY,EDIT_ACTIONS,EDIT_REGIONS,EDIT_SCOREBOARD,EDIT_EVENTS,EDIT_COMMANDS,EDIT_FUNCTIONS,EDIT_INVENTORY_LAYOUTS,EDIT_TEAMS,EDIT_CUSTOM_MENUS,ITEMS,ITEM_MAILBOX,ITEM_EGG_HUNT,ITEM_TELEPORT_PAD,ITEM_LAUNCH_PAD,ITEM_ACTION_PAD,ITEM_HOLOGRAM,ITEM_NPCS,ITEM_ACTION_BUTTON,ITEM_LEADERBOARD,ITEM_TRASHCAN,ITEM_BIOME_STICK,RESET_PLAYER_DATA|}\""]
+    },
+    "In Region": {
+        "prefix": "inRegion",
+        "body": ["inRegion \"${1:Not Set}\""]
     },
     "Has Potion Effect": {
-        "prefix": "hasPotion",
-        "body": ["hasPotion \"${1|Speed,Slowness,Haste,Mining Fatigue,Strength,Instant Health,Instant Damage,Jump Boost,Nausea,Regeneration,Resistance,Fire Resistance,Water Breathing,Invisibility,Blindness,Night Vision,Hunger,Weakness,Poison,Wither,Health Boost,Absorption|}\""]
+        "prefix": "hasPotionEffect",
+        "body": ["hasPotionEffect \"${1|Speed,Slowness,Haste,Mining Fatigue,Strength,Instant Health,Instant Damage,Jump Boost,Nausea,Regeneration,Resistance,Fire Resistance,Water Breathing,Invisibility,Blindness,Night Vision,Hunger,Weakness,Poison,Wither,Health Boost,Absorption|}\""]
     },
     "Is Sneaking": {
         "prefix": "isSneaking",
         "body": ["isSneaking"]
     },
-    "Is Gliding": {
-        "prefix": "isGliding",
-        "body": ["isGliding"]
-    },
-    "Max Player Health": {
-        "prefix": "maxHealth",
-        "body": ["maxHealth ${1|==,<,<=,>,>=|} ${2:10}"]
-    },
-    "Placeholder Number Requirement": {
-        "prefix": "placeholder",
-        "body": ["placeholder %${1|player.name,player.displayname,player.location.coords,player.location.x,player.location.y,player.location.z,player.location.pitch,player.location.yaw,player.location.speed,player.health,player.maxHealth,player.food,player.ping,player.isSprinting,player.xp,stat.player/[stat],group.name,group.prefix,group.suffix,group.priority,group.color,group.displayname,event.chat/message,event.attack/attacker,event.attack/victim,event.attack/victim.type,raycast.block/[range],raycast.block.x/[range],raycast.block.y/[range],raycast.block.z/[range],raycast.block.coords/[range],raycast.npc.id/[range],raycast.entity/[range],raycast.entity.type/[range],raycast.entity.x/[range],raycast.entity.y/[range],raycast.entity.z/[range],raycast.entity.coords/[range],touching.block/down,touching.block/up,touching.block/north,touching.block/south,touching.block/easttouching.block/west,house.name,house.cookies,house.guests,house.cookies.player,house.time,stat.global/[stat],region.name,unix.time,unix.date,server.tps,command.args/[index],math.round/[number] [places],math.randomInt/[min] [max],math.randomDouble/[min] [max],math.add/[number1] [number2],math.subtract/[number1] [number2],math.multiply/[number1] [number2],math.divide/[number1] [number2],math.modulus/[number1] [number2],math.power/[number1] [number2],math.sqrt/[number],math.abs/[number],distance/[[x]\\,[y]\\,[z]] - [[x2]\\,[y2]\\,[z2]],removeFormatting/[placeholder]|}% ${2|==,<,<=,>,>=|} ${3:10}"]
-    },
     "Player Flying": {
         "prefix": "isFlying",
         "body": ["isFlying"]
+    },
+    "Is Gliding": {
+        "prefix": "isGliding",
+        "body": ["isGliding"]
     },
     "Player Health": {
         "prefix": "health",
         "body": ["health ${1|==,<,<=,>,>=|} ${2:10}"]
     },
+    "Max Player Health": {
+        "prefix": "maxHealth",
+        "body": ["maxHealth ${1|==,<,<=,>,>=|} ${2:10}"]
+    },
     "Player Hunger": {
         "prefix": "hunger",
         "body": ["hunger ${1|==,<,<=,>,>=|} ${2:10}"]
-    },
-    "Player Stat Requirement": {
-        "prefix": "stat",
-        "body": ["stat ${1:Kills} ${2|==,<,<=,>,>=|} ${3:10}"]
     },
     "Required Gamemode": {
         "prefix": "gamemode",
         "body": ["gamemode \"${1|Adventure,Survival,Creative,Spectator|}\""]
     },
-    "Required Group": {
-        "prefix": "hasGroup",
-        "body": ["hasGroup \"${1:Default}\" ${2|true,false|}"]
+    "Placeholder Number Requirement": {
+        "prefix": "placeholder",
+        "body": ["placeholder %${1|player.name,player.displayname,player.location.coords,player.location.x,player.location.y,player.location.z,player.location.pitch,player.location.yaw,player.location.speed,player.health,player.maxHealth,player.food,player.ping,player.isSprinting,player.xp,stat.player/[stat],group.name,group.prefix,group.suffix,group.priority,group.color,group.displayname,event.chat/message,event.attack/attacker,event.attack/victim,event.attack/victim.type,raycast.block/[range],raycast.block.x/[range],raycast.block.y/[range],raycast.block.z/[range],raycast.block.coords/[range],raycast.npc.id/[range],raycast.entity/[range],raycast.entity.type/[range],raycast.entity.x/[range],raycast.entity.y/[range],raycast.entity.z/[range],raycast.entity.coords/[range],touching.block/down,touching.block/up,touching.block/north,touching.block/south,touching.block/easttouching.block/west,house.name,house.cookies,house.guests,house.cookies.player,house.time,stat.global/[stat],region.name,unix.time,unix.date,server.tps,command.args/[index],math.round/[number] [places],math.randomInt/[min] [max],math.randomDouble/[min] [max],math.add/[number1] [number2],math.subtract/[number1] [number2],math.multiply/[number1] [number2],math.divide/[number1] [number2],math.modulus/[number1] [number2],math.power/[number1] [number2],math.sqrt/[number],math.abs/[number],distance/[[x]\\,[y]\\,[z]] - [[x2]\\,[y2]\\,[z2]],removeFormatting/[placeholder]|}% ${2|==,<,<=,>,>=|} ${3:10}"]
     },
-    "Required Permission": {
-        "prefix": "hasPermission",
-        "body": ["hasPermission \"${1|Fly,Wood Door,Iron Door,Wood Trap Door,Iron Trap Door,Fence Gate,Button,Lever,Use Launch Pads,/tp,/tp Other Players,Jukebox,Kick,Ban,Mute,Pet Spawning,Build,Offline Build,Fluid,Pro Tools,Use Chests,Use Ender Chests,Item Editor,Switch Game Mode,Edit Stats,Change Player Group,Change Gamerules,Housing Menu,Team Chat Spy,Edit Actions,Edit Regions,Edit Scoreboard,Edit Event Actions,Edit Commands,Edit Functions,Edit Inventory Layouts,Edit Teams,Edit Custom Menus,Item: Mailbox,Item: Egg Hunt,Item: Teleport Pad,Item: Launch Pad,Item: Action Pad,Item: Hologram,Item: NPCs,Item: Action Button,Item: Leaderboard,Item: Trash Can,Item: Biome Stick|}\""]
+    "Is Attack Cooldown": {
+        "prefix": "isAttackCooldown",
+        "body": ["isAttackCooldown"]
+    },
+    "Click Type": {
+        "prefix": "clickType",
+        "body": ["clickType \"${1|LEFT,RIGHT,SHIFT_LEFT,SHIFT_RIGHT|}\""]
+    },
+    "Damage Type": {
+        "prefix": "damageType",
+        "body": ["damageType \"${1|IN_FIRE,CAMPFIRE,LIGHTNING_BOLT,ON_FIRE,LAVA,HOT_FLOOR,IN_WALL,CRAMMING,DROWN,STARVE,CACTUS,FALL,ENDER_PEARL,FLY_INTO_WALL,OUT_OF_WORLD,GENERIC,MAGIC,WITHER,DRAGON_BREATH,DRY_OUT,SWEET_BERRY_BUSH,FREEZE,STALAGMITE,FALLING_BLOCK,FALLING_ANVIL,FALLING_STALACTITE,STING,MOB_ATTACK,MOB_ATTACK_NO_AGGRO,PLAYER_ATTACK,ARROW,TRIDENT,MOB_PROJECTILE,SPIT,FIREWORKS,FIREBALL,UNATTRIBUTED_FIREBALL,WITHER_SKULL,THROWN,INDIRECT_MAGIC,THORNS,EXPLOSION,PLAYER_EXPLOSION,SONIC_BOOM,BAD_RESPAWN_POINT,OUTSIDE_BORDER,GENERIC_KILL,WIND_CHARGE,MACE_SMASH|}\""]
+    },
+    "Damage Amount": {
+        "prefix": "damageAmount",
+        "body": ["damageAmount ${1|==,<,<=,>,>=|} ${2:10}"]
+    },
+    "Interaction Type": {
+        "prefix": "interactionType",
+        "body": ["interactionType ${1|true,false|}\""]
     }
 }
