@@ -25,15 +25,15 @@
             "name": "constant.numeric.float.htsl"
         },
         {
-            "match": "\\b(launchTarget|changeVelocity|dropItem|define|loop|stat|globalstat|chat|if|random|giveItem|removeItem|tp|compassTarget|applyLayout|applyPotion|enchant|actionBar|cancelEvent|changeHealth|changePlayerGroup|clearEffects|title|failParkour|fullHeal|xpLevel|houseSpawn|kill|parkCheck|sound|resetInventory|lobby|gamemode|hungerLevel|maxHealth|function|consumeItem|displayMenu|closeMenu|pause|setTeam|teamstat|balanceTeam|goto|else|exit)\\b",
+            "match": "\\b(var|globalvar|teamvar|playerWeather|playerTime|displayNametag|launchTarget|changeVelocity|dropItem|define|loop|stat|globalstat|chat|if|random|giveItem|removeItem|tp|compassTarget|applyLayout|applyPotion|enchant|actionBar|cancelEvent|changeHealth|changePlayerGroup|clearEffects|title|failParkour|fullHeal|xpLevel|houseSpawn|kill|parkCheck|sound|resetInventory|lobby|gamemode|hungerLevel|maxHealth|function|consumeItem|displayMenu|closeMenu|pause|setTeam|teamstat|balanceTeam|goto|else|exit)\\b",
             "name": "keyword.control.htsl"
         },
         {
-            "match": "\\b(increment|decrement|set|multiply|divide|inc|dec|mult|div|\\+=|-=|=|\\*=|/=|//=)\\b",
+            "match": "\\b(increment|decrement|set|multiply|divide|inc|dec|mult|div|\\+=|-=|=|\\*=|/=|//=|unset)\\b",
             "name": "keyword.operator.htsl"
         },
         {
-            "match": "(?<=\\b(stat|globalstat|health|maxHealth|hunger|damageAmount|teamstat)\\s+\\w+\\s*)>=|==|<=|!=|>|<|=>|=<",
+            "match": "(?<=\\b(stat|globalstat|health|maxHealth|hunger|damageAmount|teamstat|var|globalvar|teamvar)\\s+\\w+\\s*)>=|==|<=|!=|>|<|=>|=<",
             "name": "keyword.operator.comparison.htsl"
         },
         {
@@ -50,7 +50,7 @@
             "name": "support.function.htsl"
         },
         {
-            "match": "(?<=\\b(stat|globalstat|teamstat)\\s)\\w+",
+            "match": "(?<=\\b(stat|globalstat|teamstat|var|globalvar|teamvar)\\s)\\w+",
             "name": "variable.other.htsl"
         },
         {

@@ -15,9 +15,9 @@
         "prefix": "cancelEvent",
         "body": ["cancelEvent"]
     },
-    "Change Global Stat": {
-        "prefix": "globalstat",
-        "body": ["globalstat ${1:Kills} ${2|inc,dec,set,mult,div,+=,-=,=,*=,/=|} ${3:1}"]
+    "Change Global Variable": {
+        "prefix": "globalvar",
+        "body": ["globalvar ${1:Kills} ${2|inc,dec,set,mult,div,+=,-=,=,*=,/=|} ${3:1} ${4|false,true}"]
     },
     "Change Health": {
         "prefix": "changeHealth",
@@ -35,13 +35,13 @@
         "prefix": "changePlayerGroup",
         "body": ["changePlayerGroup \"${1:Visitor}\" ${2|true,false|}"]
     },
-    "Change Player Stat": {
-        "prefix": "stat",
-        "body": ["stat ${1:Kills} ${2|inc,dec,set,mult,div,+=,-=,=,*=,/=|} ${3:1}"]
+    "Change Player Variable": {
+        "prefix": "var",
+        "body": ["var ${1:Kills} ${2|inc,dec,set,mult,div,+=,-=,=,*=,/=|} ${3:1} ${4|false,true}"]
     },
     "Change Team Stat": {
-        "prefix": "teamstat",
-        "body": ["teamstat ${1:Kills} ${2:Blue} ${3|inc,dec,set,mult,div,+=,-=,=,*=,/=|} ${4:1}"]
+        "prefix": "teamvar",
+        "body": ["teamvar ${1:Kills} ${2:Blue} ${3|inc,dec,set,mult,div,+=,-=,=,*=,/=|} ${4:1}, ${5|false,true}"]
     },
     "Change Velocity": {
         "prefix": "changeVelocity",
