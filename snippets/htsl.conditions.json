@@ -25,7 +25,7 @@
     },
     "Has Item": {
         "prefix": "hasItem",
-        "body": ["hasItem \"${1:Stone}\" ${2:metadata} \"${3|Hand,Armor,Hotbar,Inventory,Cursor,Crafting Grid,Anywhere|}\" ${4:anyAmount}"]
+        "body": ["hasItem \"${1:Stone}\" \"${2|Item Type,Metadata|}\" \"${3|Hand,Armor,Hotbar,Inventory,Cursor,Crafting Grid,Anywhere|}\" \"${4|Any Amount,Equal or Greater Amount|}\""]
     },
     "Has Potion Effect": {
         "prefix": "hasPotion",
