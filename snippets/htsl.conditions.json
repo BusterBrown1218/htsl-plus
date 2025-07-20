@@ -20,8 +20,8 @@
         "body": ["fishingEnv \"${1|Water,Lava|}\""]
     },
     "Global Stat Requirement": {
-        "prefix": "globalstat",
-        "body": ["globalstat ${1:Kills} ${2|==,<,<=,>,>=|} ${3:10}"]
+        "prefix": "globalvar",
+        "body": ["globalvar ${1:Kills} ${2|==,<,<=,>,>=|} ${3:10} ${4:0}"]
     },
     "Has Item": {
         "prefix": "hasItem",
@@ -60,8 +60,8 @@
         "body": ["hunger ${1|==,<,<=,>,>=|} ${2:10}"]
     },
     "Player Stat Requirement": {
-        "prefix": "stat",
-        "body": ["stat ${1:Kills} ${2|==,<,<=,>,>=|} ${3:10}"]
+        "prefix": "var",
+        "body": ["var ${1:Kills} ${2|==,<,<=,>,>=|} ${3:10} ${4:0}"]
     },
     "Portal Type": {
         "prefix": "portal",
@@ -88,7 +88,7 @@
         "body": ["hasTeam \"${1:Blue}\""]
     },
     "Team Stat Requirement": {
-        "prefix": "teamstat",
-        "body": ["teamstat ${1:Kills} ${2:Blue} ${3|==,<,<=,>,>=|} ${4:10}"]
+        "prefix": "teamvar",
+        "body": ["teamvar ${1:Kills} ${2:Blue} ${3|==,<,<=,>,>=|} ${4:10} ${5:0}"]
     }
 }
