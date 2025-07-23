@@ -17,7 +17,7 @@
     },
     "Change Global Variable": {
         "prefix": "globalvar",
-        "body": ["globalvar ${1:Kills} ${2|inc,dec,set,mult,div,+=,-=,=,*=,/=|} ${3:1} ${4|false,true}"]
+        "body": ["globalvar ${1:Kills} ${2|inc,dec,set,mult,div,+=,-=,=,*=,/=|} ${3:1} ${4|false,true|}"]
     },
     "Change Health": {
         "prefix": "changeHealth",
@@ -37,11 +37,11 @@
     },
     "Change Player Variable": {
         "prefix": "var",
-        "body": ["var ${1:Kills} ${2|inc,dec,set,mult,div,+=,-=,=,*=,/=|} ${3:1} ${4|false,true}"]
+        "body": ["var ${1:Kills} ${2|inc,dec,set,mult,div,+=,-=,=,*=,/=|} ${3:1} ${4|false,true|}"]
     },
     "Change Team Stat": {
         "prefix": "teamvar",
-        "body": ["teamvar ${1:Kills} ${2:Blue} ${3|inc,dec,set,mult,div,+=,-=,=,*=,/=|} ${4:1}, ${5|false,true}"]
+        "body": ["teamvar ${1:Kills} ${2:Blue} ${3|inc,dec,set,mult,div,+=,-=,=,*=,/=|} ${4:1}, ${5|false,true|}"]
     },
     "Change Velocity": {
         "prefix": "changeVelocity",
