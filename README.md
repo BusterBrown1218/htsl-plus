@@ -2,8 +2,6 @@
 
 This VSCode extension adds auto completion and syntax highlighting for HTSL, the Housing Text Scripting Language
 
-Update extension readme pls
-
 # Requirements
 * [VSCode](https://code.visualstudio.com/download)
 
