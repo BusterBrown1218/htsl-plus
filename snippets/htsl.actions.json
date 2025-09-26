@@ -37,7 +37,7 @@
     },
     "Change Player Variable": {
         "prefix": "var",
-        "body": ["var ${1:Kills} ${2|inc,dec,set,mult,div,shl,shr,+=,-=,=,*=,/=,&=,\\|=,^=,<<=,>>=|} ${3:1} ${4|false,true|}"]
+        "body": ["var ${1:Kills} ${2|inc,dec,set,mult,div,shl,shr,lshr,+=,-=,=,*=,/=,&=,\\|=,^=,<<=,>>=,>>>=|} ${3:1} ${4|false,true|}"]
     },
     "Change Team Stat": {
         "prefix": "teamvar",
