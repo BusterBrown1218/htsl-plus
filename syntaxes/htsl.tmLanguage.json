@@ -29,7 +29,7 @@
             "name": "keyword.control.htsl"
         },
         {
-            "match": "\\b(increment|decrement|set|multiply|divide|inc|dec|mult|div|\\+=|-=|=|\\*=|/=|//=|unset)\\b",
+            "match": "\\b(increment|decrement|set|multiply|divide|inc|dec|mult|div|shl|shr|\\+=|-=|=|\\*=|\/=|\/\/=|&=|\\|=|^=|<<=|>>=|unset)\\b",
             "name": "keyword.operator.htsl"
         },
         {
